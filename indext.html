@@ -9,8 +9,7 @@
     <p>Open the Console (F12 → Console tab) to see the program output.</p>
 
     <script>
-        // 1. Variables & Constants, Arithmetic
-        const BASE_NUMBER = 10; // Pwede mong palitan ng kahit anong number
+        const BASE_NUMBER = 20;
         let userName = prompt("Enter your name:");
         let userNumber = parseInt(prompt("Enter a number:"));
 
@@ -22,12 +21,12 @@
         console.log("Product: " + (BASE_NUMBER * userNumber));
         console.log("Quotient: " + (BASE_NUMBER / userNumber));
 
-        // 2. Strings & String Methods
+
         let sentence = prompt("Enter a short sentence:");
         console.log("Uppercase: " + sentence.toUpperCase());
         console.log("Lowercase: " + sentence.toLowerCase());
 
-        // 3. If Statements & Ternary Operator
+
         if (userNumber >= 0) {
             console.log("Using if: Your number is Positive.");
         } else {
@@ -37,7 +36,7 @@
         let result = (userNumber >= 0) ? "Positive" : "Negative";
         console.log("Using ternary: Your number is " + result);
 
-        // 4. Loops
+
         console.log("For loop counting up to your number:");
         for (let i = 1; i <= userNumber; i++) {
             console.log(i);
@@ -50,7 +49,7 @@
             count--;
         }
 
-        // 5. Functions & Arrays
+
         function greetUser(name) {
             console.log("Hello, " + name + "!");
         }
