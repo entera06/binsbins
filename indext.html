@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Assignment</title>
+</head>
+<body>
+    <h1>My JavaScript Assignment</h1>
+    <p>Open the Console (F12 → Console tab) to see the program output.</p>
+
+    <script>
+        // 1. Variables & Constants, Arithmetic
+        const BASE_NUMBER = 10; // Pwede mong palitan ng kahit anong number
+        let userName = prompt("Enter your name:");
+        let userNumber = parseInt(prompt("Enter a number:"));
+
+        console.log("Hello, " + userName + "!");
+        console.log("Base Number: " + BASE_NUMBER + ", Your Number: " + userNumber);
+
+        console.log("Sum: " + (BASE_NUMBER + userNumber));
+        console.log("Difference: " + (BASE_NUMBER - userNumber));
+        console.log("Product: " + (BASE_NUMBER * userNumber));
+        console.log("Quotient: " + (BASE_NUMBER / userNumber));
+
+        // 2. Strings & String Methods
+        let sentence = prompt("Enter a short sentence:");
+        console.log("Uppercase: " + sentence.toUpperCase());
+        console.log("Lowercase: " + sentence.toLowerCase());
+
+        // 3. If Statements & Ternary Operator
+        if (userNumber >= 0) {
+            console.log("Using if: Your number is Positive.");
+        } else {
+            console.log("Using if: Your number is Negative.");
+        }
+
+        let result = (userNumber >= 0) ? "Positive" : "Negative";
+        console.log("Using ternary: Your number is " + result);
+
+        // 4. Loops
+        console.log("For loop counting up to your number:");
+        for (let i = 1; i <= userNumber; i++) {
+            console.log(i);
+        }
+
+        console.log("While loop countdown from 5:");
+        let count = 5;
+        while (count > 0) {
+            console.log(count);
+            count--;
+        }
+
+        // 5. Functions & Arrays
+        function greetUser(name) {
+            console.log("Hello, " + name + "!");
+        }
+        greetUser(userName);
+
+        let fruits = [];
+        for (let i = 1; i <= 3; i++) {
+            fruits.push(prompt("Enter favorite fruit " + i + ":"));
+        }
+        console.log("Your favorite fruits are: " + fruits.join(", "));
+    </script>
+</body>
+</html>
